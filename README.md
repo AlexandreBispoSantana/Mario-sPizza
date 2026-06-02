@@ -1,2 +1,5 @@
 # Mario-sPizza
-Chegue esfomeado e leve uma comida
+
+"Feita com paixão, servida com sabor"
+
+ Projeto de uma pizzaria chamada "Mario-sPizza" para fins de aprendizado academico.
