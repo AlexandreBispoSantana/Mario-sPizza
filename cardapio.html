@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cardápio completo da Mario's Pizza. Conheça nossos sabores artesanais com ingredientes frescos e preços especiais.">
+    <title>Cardápio — Mario's Pizza</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="./images/logo.png" alt="Mario's Pizza Logo">
+            <span>Mario's<span class="highlight">Pizza</span></span>
+        </a>
+        <div class="navbar-links" id="navLinks">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html" class="active">Cardápio</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="cadastro.html" class="navbar-cta">Peça Agora</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <span class="section-label">Nosso Cardápio</span>
+        <h1 class="section-title">Escolha seu sabor favorito</h1>
+        <p class="section-subtitle">Todas as nossas pizzas são feitas com massa artesanal e ingredientes frescos selecionados diariamente</p>
+    </section>
+
+    <!-- Cardápio Grid -->
+    <section class="cardapio-grid" id="cardapio">
+
+        <!-- Marguerita -->
+        <div class="pizza-card animate-on-scroll">
+            <div class="pizza-card-image">
+                <img src="./images/marguerita.jfif" alt="Pizza Marguerita">
+                <span class="price-badge">R$ 39,90</span>
+            </div>
+            <div class="pizza-card-body">
+                <h3>Pizza Marguerita</h3>
+                <p class="description">Tomate fresco, muçarela de búfala, manjericão fresco e molho de tomate artesanal. Um clássico italiano irresistível.</p>
+                <div class="pizza-card-actions">
+                    <button class="btn btn-primary add-to-cart-btn" data-pizza="Marguerita" data-price="39.90">🛒 Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calabresa -->
+        <div class="pizza-card animate-on-scroll">
+            <div class="pizza-card-image">
+                <img src="./images/calabresa.jfif" alt="Pizza Calabresa">
+                <span class="price-badge">R$ 42,90</span>
+            </div>
+            <div class="pizza-card-body">
+                <h3>Pizza Calabresa</h3>
+                <p class="description">Calabresa fatiada artesanalmente, cebola roxa caramelizada, molho de tomate e muçarela gratinada.</p>
+                <div class="pizza-card-actions">
+                    <button class="btn btn-primary add-to-cart-btn" data-pizza="Calabresa" data-price="42.90">🛒 Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quatro Queijos -->
+        <div class="pizza-card animate-on-scroll">
+            <div class="pizza-card-image">
+                <img src="./images/quatro-queijos.jfif" alt="Pizza Quatro Queijos">
+                <span class="price-badge">R$ 45,90</span>
+            </div>
+            <div class="pizza-card-body">
+                <h3>Pizza Quatro Queijos</h3>
+                <p class="description">Muçarela, parmesão envelhecido, gorgonzola e provolone defumado, com molho especial da casa.</p>
+                <div class="pizza-card-actions">
+                    <button class="btn btn-primary add-to-cart-btn" data-pizza="Quatro Queijos" data-price="45.90">🛒 Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegetariana -->
+        <div class="pizza-card animate-on-scroll">
+            <div class="pizza-card-image">
+                <img src="./images/vegetariana.jfif" alt="Pizza Vegetariana">
+                <span class="price-badge">R$ 44,90</span>
+            </div>
+            <div class="pizza-card-body">
+                <h3>Pizza Vegetariana</h3>
+                <p class="description">Abobrinha grelhada, berinjela, pimentões coloridos, tomate cereja e muçarela com ervas finas.</p>
+                <div class="pizza-card-actions">
+                    <button class="btn btn-primary add-to-cart-btn" data-pizza="Vegetariana" data-price="44.90">🛒 Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pepperoni -->
+        <div class="pizza-card animate-on-scroll">
+            <div class="pizza-card-image">
+                <img src="./images/pepperoni.jpg" alt="Pizza Pepperoni">
+                <span class="price-badge">R$ 47,90</span>
+            </div>
+            <div class="pizza-card-body">
+                <h3>Pizza Pepperoni</h3>
+                <p class="description">Pepperoni importado fatiado, molho de tomate italiano San Marzano e muçarela gratinada dourada.</p>
+                <div class="pizza-card-actions">
+                    <button class="btn btn-primary add-to-cart-btn" data-pizza="Pepperoni" data-price="47.90">🛒 Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="Mario's Pizza">
+                    <span>Mario's Pizza</span>
+                </div>
+                <p>Chegue esfomeado e leve uma comida inesquecível. A melhor pizza artesanal da cidade, feita com amor e tradição italiana.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Navegação</h4>
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <a href="#">📍 Rua da Pizza, 123</a>
+                <a href="#">📞 (11) 99999-9999</a>
+                <a href="#">✉️ contato@mariospizza.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Mario's Pizza — Todos os direitos reservados</span>
+            <span class="made-with">Feito com <span>❤️</span> e muita pizza</span>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✅</span>
+        <span class="toast-text" id="toastText">Item adicionado!</span>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

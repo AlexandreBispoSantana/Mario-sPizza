@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça seu cadastro na Mario's Pizza para aproveitar promoções exclusivas e agilizar seus pedidos.">
+    <title>Cadastro — Mario's Pizza</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="./images/logo.png" alt="Mario's Pizza Logo">
+            <span>Mario's<span class="highlight">Pizza</span></span>
+        </a>
+        <div class="navbar-links" id="navLinks">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="cadastro.html" class="active">Cadastro</a>
+            <a href="cadastro.html" class="navbar-cta">Peça Agora</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Cadastro Form Section -->
+    <section class="form-section">
+        <div class="form-card animate-on-scroll">
+            
+            <div class="form-header">
+                <h1>Crie sua Conta</h1>
+                <p>Cadastre-se para pedidos mais rápidos e promoções exclusivas!</p>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <form id="cadastroForm" action="#" method="POST">
+                <div class="form-grid">
+                    
+                    <div class="form-group full-width">
+                        <label for="nome"><span class="icon">👤</span> Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Mario Bros" required minlength="3">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><span class="icon">✉️</span> Email</label>
+                        <input type="email" id="email" name="email" placeholder="mario@exemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone"><span class="icon">📱</span> Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="endereco"><span class="icon">📍</span> Endereço Completo</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Bairro" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="pizza"><span class="icon">🍕</span> Sua Pizza Favorita</label>
+                        <select id="pizza" name="pizza" required>
+                            <option value="" disabled selected>Escolha um sabor...</option>
+                            <option value="marguerita">Marguerita</option>
+                            <option value="calabresa">Calabresa</option>
+                            <option value="quatro_queijos">Quatro Queijos</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="vegetariana">Vegetariana</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="mensagem"><span class="icon">📝</span> Observações (Opcional)</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Alguma preferência ou restrição alimentar?"></textarea>
+                    </div>
+
+                    <div class="form-submit-wrapper">
+                        <button type="submit" class="btn btn-primary">Concluir Cadastro</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <!-- Mensagem de Sucesso (Oculta por padrão) -->
+            <div class="success-message" id="successMessage">
+                <span class="success-icon">🎉</span>
+                <h2>Cadastro Realizado!</h2>
+                <p>Bem-vindo à família Mario's Pizza! Agora você pode aproveitar todas as nossas vantagens.</p>
+                <a href="cardapio.html" class="btn btn-primary">Ver Cardápio</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="Mario's Pizza">
+                    <span>Mario's Pizza</span>
+                </div>
+                <p>Chegue esfomeado e leve uma comida inesquecível. A melhor pizza artesanal da cidade, feita com amor e tradição italiana.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Navegação</h4>
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <a href="#">📍 Rua da Pizza, 123</a>
+                <a href="#">📞 (11) 99999-9999</a>
+                <a href="#">✉️ contato@mariospizza.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Mario's Pizza — Todos os direitos reservados</span>
+            <span class="made-with">Feito com <span>❤️</span> e muita pizza</span>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✅</span>
+        <span class="toast-text" id="toastText">Ação realizada!</span>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
